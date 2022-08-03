@@ -19,7 +19,7 @@ function render() {
         copyHtml.addEventListener('click', function (event) {
             event.preventDefault()
             navigator.clipboard.writeText(copyHtml.textContent).then(function() {
-                alert(`Copied`)
+                alert(`${copyHtml.textContent} Copied`)
               }, function() {
                 alert(`Unsuccessful`)
               });
