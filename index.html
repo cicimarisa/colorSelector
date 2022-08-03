@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Color Selector</title>
+    <meta name="description" content="Its a page to generate a color">
+    <link rel="shortcut icon" href="icon.ico">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <form class="d-flex" id="form-color">
+                <div class="d-flex">
+                    <input type="color" id="select-color" value="#e66465"/>
+                    <select name="select-color" id="select-mode">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                </div>
+                <button type="submit">Get Scheme</button>
+            </form>
+        </nav>
+        <div id="colors" class="colors d-flex">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
