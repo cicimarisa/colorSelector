@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-    padding: 2em 0;
+    padding: 1.5em 0 .5em 0;
     width: 100%;
 }
 
@@ -58,6 +58,10 @@ button:hover {
 }
 
 @media (min-width:750px) {
+    nav {
+        padding: 2em 0;
+    }
+
     select {
         margin: 0 2em;
     }
