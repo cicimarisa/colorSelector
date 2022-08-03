@@ -32,6 +32,7 @@ button {
     border-radius: 3px;
     border: .5px solid #767676;
     color: black;
+    background: none;
 }
 
 select {
@@ -39,16 +40,14 @@ select {
 }
 
 input {
-    background: none;
     height: 2.45em;
 }
 
 button {
-    background: none;
     padding: .55em 1em;
     cursor: pointer;
     border-radius: 3px;
-    padding: 1em 0;
+    padding: .6em 0;
 }
 
 button:hover{
