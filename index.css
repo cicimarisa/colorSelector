@@ -57,10 +57,6 @@ button:hover {
     border: #d4d2d2;
 }
 
-.color-val {
-    padding: 10vh 30vw;
-}
-
 @media (min-width:750px) {
     select {
         margin: 0 2em;
@@ -84,10 +80,6 @@ button:hover {
 
     input {
         height: 3.5em;
-    }
-
-    .color-val {
-        padding: 25vh 6vw;
     }
 
     select,
