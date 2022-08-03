@@ -13,13 +13,14 @@ function render() {
 
     document.getElementById("colors").innerHTML = colorsHtml
 
-    const copiedHtml = document.getElementsByClassName("color-val")
+    const copiedHtml = document.getElementsByClassName("color-panel")
+    const copiedHex = document.getElementsByClassName("color-val")
 
-    for (const copyHtml of copiedHtml) {
-        copyHtml.addEventListener('click', function (event) {
+    for (let i = 0; i < copiedHtml.length; i++){
+        copiedHtml[i].addEventListener('click', function (event) {
             event.preventDefault()
-            navigator.clipboard.writeText(copyHtml.textContent).then(function() {
-                alert(`${copyHtml.textContent} Copied`)
+            navigator.clipboard.writeText(copiedHex[i].textContent).then(function() {
+                alert(`${copiedHex[i].textContent} Copied`)
               }, function() {
                 alert(`Unsuccessful`)
               });
