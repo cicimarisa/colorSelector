@@ -5,7 +5,7 @@ const selectMode = document.getElementById("select-mode")
 
 function render() {
     let colorsHtml = colors.map((color) => {
-        return `<div class="color-panel d-flex" style="background:${color}">
+        return `<div class="color-panel d-flex" style="background:${color}" aria-label="Hex Color display of ${color}">
                     <p class="color-val">${color}</p>
                 </div>`
     }).join("")
