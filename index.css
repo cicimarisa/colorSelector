@@ -22,8 +22,8 @@ body {
 }
 
 nav {
-    padding: 1.5em 0 .8em 0;
-    width: 100%;
+    padding: 2em 0; 
+    background: #FFF;
 }
 
 select,
@@ -31,10 +31,11 @@ input,
 button {
     font-family: inherit;
     border-radius: 3px;
-    border: .5px solid #767676;
+    border: .5px solid #d4d2d2;
     color: black;
     background: #FFF;
     margin: .3em 0;
+    font-weight: inherit;
 }
 
 select {
@@ -54,14 +55,17 @@ button {
 
 button:hover {
     background: #d4d2d2;
-    border: #d4d2d2;
+}
+
+.light{
+    color: #FFFFFF;
+}
+
+.color-val{
+    font-size: 1.5rem;
 }
 
 @media (min-width:750px) {
-    nav {
-        padding: 2em 0;
-    }
-
     select {
         margin: 0 2em;
     }
@@ -101,6 +105,13 @@ Layout
 .container {
     width: 80vw;
     margin: 0 auto;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+nav {
+    width: 100%;
+    position: unset;
 }
 
 .d-flex {
@@ -121,7 +132,6 @@ form .d-flex {
 }
 
 .color-panel.d-flex {
-    margin: -.1em 0;
     width: 80vw;
     height: 100px;
     justify-content: center;
@@ -140,14 +150,23 @@ form .d-flex {
 
     .colors.d-flex {
         flex-direction: row;
+        padding: 20vh 0 0 0;
     }
 
     .color-panel.d-flex {
         margin: -.1em 0;
         width: 20vw;
-        height: 50vh;
+        height: 80.3vh;
         justify-content: center;
         align-items: center;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .container {
+        margin-bottom: 0;
     }
 
 }
